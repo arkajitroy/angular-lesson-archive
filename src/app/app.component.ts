@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { getTodaysDateAndTime } from '../libs/date';
 import { CardComponent } from './components/card/card.component';
-import { CounterAppComponent } from './counter-app/counter-app.component';
+// import { CounterAppComponent } from './counter-app/counter-app.component';
+import { FormAppComponent } from './form-app/form-app.component';
 
 @Component({
   selector: 'app-root',
-  imports: [CounterAppComponent],
+  imports: [FormAppComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
