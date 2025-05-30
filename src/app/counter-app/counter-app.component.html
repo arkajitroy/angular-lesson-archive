@@ -1,0 +1,26 @@
+<div
+  class="bg-white shadow-md border-1 border-gray-200 rounded-2xl p-6 w-80 mx-auto text-center"
+>
+  <h2 class="text-xl mb-4">Counter App</h2>
+  <p class="text-4xl font-mono font-semibold text-blue-600 mb-6">{{ count }}</p>
+  <div class="flex justify-center gap-4">
+    <button
+      class="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded"
+      (click)="handleCounter('decrement')"
+    >
+      -
+    </button>
+    <button
+      class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded"
+      (click)="handleCounter('reset')"
+    >
+      Reset
+    </button>
+    <button
+      class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-2 px-4 rounded"
+      (click)="handleCounter('increment')"
+    >
+      +
+    </button>
+  </div>
+</div>
