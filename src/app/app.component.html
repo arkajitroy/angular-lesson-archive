@@ -9,4 +9,12 @@
     <span>Date: {{ date.date }}</span>
     <span>Time: {{ date.time }}</span>
   </div>
+
+  <app-card
+    [title]="'The Coldest Sunset'"
+    [description]="
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!'
+    "
+    [tags]="['#photography', '#travel', '#winter']"
+  />
 </main>
