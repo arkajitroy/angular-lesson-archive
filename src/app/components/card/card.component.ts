@@ -12,4 +12,13 @@ export class CardComponent {
   @Input() title!: string;
   @Input() description!: string;
   @Input() tags: string[] = [];
+
+  logger(msg: string) {
+    console.log('Log:', msg);
+  }
+
+  handleClickEvent(msg: string) {
+    alert(msg);
+    this.logger('Button got clicked.');
+  }
 }
