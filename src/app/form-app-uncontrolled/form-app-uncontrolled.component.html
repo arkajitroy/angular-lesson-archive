@@ -1,0 +1,29 @@
+<main
+  class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md mt-10 space-y-2"
+>
+  <h3 class="text-red-600 text-center font-bold">Angular Uncontrolled Form</h3>
+
+  <form (submit)="handleSubmit($event)" class="flex flex-col gap-4">
+    <input
+      type="text"
+      name="username"
+      #username
+      (input)="handleInputChange('username', $event)"
+      class="border p-2"
+      placeholder="Enter your username"
+    />
+    <div *ngIf="errors.username" style="color: red">{{ errors.username }}</div>
+
+    <input
+      type="email"
+      name="email"
+      #email
+      (input)="handleInputChange('email', $event)"
+      class="border p-2"
+      placeholder="Enter your email"
+    />
+    <div *ngIf="errors.email" style="color: red">{{ errors.email }}</div>
+
+    <button class="bg-rose-600 text-white" type="submit">Submit</button>
+  </form>
+</main>

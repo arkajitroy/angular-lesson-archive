@@ -13,6 +13,7 @@ import {
   templateUrl: './form-app.component.html',
   styleUrl: './form-app.component.css',
 })
+
 export class FormAppComponent {
   form = new FormGroup({
     name: new FormControl('', [Validators.required]),
